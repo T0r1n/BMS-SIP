@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "BMS SIP"
+rootProject.name = "FrontV2"
 include ':app'

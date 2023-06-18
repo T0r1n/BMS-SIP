@@ -1,3 +1,45 @@
 <resources>
-    <string name="app_name">BMS SIP</string>
+    <string name="app_name">Front</string>
+    <string name="call_icon">call</string>
+    <string name="email_icon">email</string>
+    <string name="settings_icon">icon</string>
+    <string name="conviviis_icon">conviviis</string>
+    <string name="becker_icon">becker</string>
+    <string name="status">Status</string>
+    <string name="auth">Авторизация</string>
+    <string name="login_edit">Введите логин</string>
+    <string name="password_edit">Введите пароль</string>
+    <string name="last_calls">Последние звонки</string>
+    <string name="calls_book">Телефонная книга</string>
+    <string name="entrance">Вход</string>
+    <string name="NewChat">Создать новый чат</string>
+    <string name="editLogin">Введите логин</string>
+    <string name="ButtonLastCall">TODO</string>
+    <string name="ButtonNumberCall">TODO</string>
+    <string name="ButtonBookCall">TODO</string>
+    <string name="SerchClient">Name</string>
+    <string name="SerchIcon">TODO</string>
+    <string name="BookCall">TODO</string>
+    <string name="AddName">Введите Имя</string>
+    <string name="AddLastName">Введите Фамилию</string>
+    <string name="AddNumber">Введите номер</string>
+    <string name="Add">Добавить</string>
+    <string name="AddsUsers">Добавление пользователя</string>
+    <string name="Settings_SIP">Настройка SIP-Клиента</string>
+    <string name="InputURL">Введите URL-адрес</string>
+    <string name="Exit">Выйти</string>
+    <string name="Connect">Подключиться</string>
+    <string name="Number1">1</string>
+    <string name="Number2">2</string>
+    <string name="Number3">3</string>
+    <string name="Number4">4</string>
+    <string name="Number5">5</string>
+    <string name="Number6">6</string>
+    <string name="Number7">7</string>
+    <string name="Number8">8</string>
+    <string name="Number9">9</string>
+    <string name="Number0">0</string>
+    <string name="callNumber">TODO</string>
+    <string name="DeleteNumber">TODO</string>
+
 </resources>
