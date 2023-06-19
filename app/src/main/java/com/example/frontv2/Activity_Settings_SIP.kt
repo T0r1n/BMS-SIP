@@ -27,4 +27,8 @@ class Activity_Settings_SIP : AppCompatActivity() {
         val intent = Intent(this, ActivityEmail::class.java)
         startActivity(intent)
     }
+    fun onClickGoMain(view : View){
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }
