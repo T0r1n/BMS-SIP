@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun onClickGoConviviis(view : View){
-        val intent = Intent(this, ActivityConviviis::class.java)
+        val intent = Intent(this, Activity_conviviis2::class.java)
         startActivity(intent)
     }
     fun onClickGoEmail(view : View){

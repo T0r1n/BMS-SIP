@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 
 class Activity_Settings_SIP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,7 @@ class Activity_Settings_SIP : AppCompatActivity() {
         startActivity(intent)
     }
     fun onClickGoConviviis(view : View){
-        val intent = Intent(this, ActivityConviviis::class.java)
+        val intent = Intent(this, Activity_conviviis2::class.java)
         startActivity(intent)
     }
     fun onClickGoEmail(view : View){

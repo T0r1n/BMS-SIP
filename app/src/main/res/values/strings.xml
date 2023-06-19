@@ -21,7 +21,7 @@
     <string name="SerchIcon">TODO</string>
     <string name="BookCall">TODO</string>
     <string name="AddName">Введите Имя</string>
-    <string name="AddLastName">Введите Фамилию</string>
+    <string name="AddLastName">Введите ФИО</string>
     <string name="AddNumber">Введите номер</string>
     <string name="Add">Добавить</string>
     <string name="AddsUsers">Добавление пользователя</string>
@@ -41,5 +41,6 @@
     <string name="Number0">0</string>
     <string name="callNumber">TODO</string>
     <string name="DeleteNumber">TODO</string>
+    <string name="back">TODO</string>
 
 </resources>

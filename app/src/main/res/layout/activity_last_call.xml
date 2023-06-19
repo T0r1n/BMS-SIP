@@ -234,7 +234,7 @@
             android:layout_height="39dp"
             android:ems="10"
             android:inputType="text"
-            android:text="@string/SerchClient"
+            android:hint="@string/SerchClient"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"

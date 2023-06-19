@@ -156,54 +156,52 @@
         app:layout_constraintVertical_bias="0.529"
         tools:ignore="TextSizeCheck">
 
-        <EditText
-            android:id="@+id/FirstNameInput"
-            android:layout_width="256dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="25dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:textSize="20sp"
-            android:inputType="text"
-            android:hint="@string/AddName"
-            android:textColorHint="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AddUserTxt"
-            tools:ignore="LabelFor" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/Red"
+            android:contentDescription="@string/back"
+            android:onClick="onClickGoBookCall"
+            app:layout_constraintEnd_toStartOf="@+id/BtnAddUser"
+            app:layout_constraintTop_toBottomOf="@+id/LastNameInput"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/black" />
 
         <EditText
             android:id="@+id/LastNameInput"
-            android:layout_width="256dp"
+            android:layout_width="match_parent"
             android:layout_height="59dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:autofillHints=""
             android:ems="10"
-            android:textSize="20sp"
-            android:inputType="text"
             android:hint="@string/AddLastName"
+            android:inputType="text"
             android:textColorHint="@color/white"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/FirstNameInput"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
             tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/editTextPhone"
-            android:layout_width="256dp"
+            android:layout_width="match_parent"
             android:layout_height="59dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="44dp"
             android:autofillHints=""
             android:ems="10"
-            android:textSize="20sp"
-            android:inputType="phone"
             android:hint="@string/AddNumber"
+            android:inputType="phone"
             android:textColorHint="@color/white"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LastNameInput"
+            app:layout_constraintTop_toBottomOf="@+id/AddUserTxt"
             tools:ignore="LabelFor" />
 
         <Button
@@ -213,7 +211,7 @@
             android:layout_marginBottom="16dp"
             android:backgroundTint="@color/system"
             android:text="@string/Add"
-            android:textSize="20sp"
+            android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -228,6 +226,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textSize="23sp"/>
+            android:textSize="25sp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@ class ActivityEmail : AppCompatActivity() {
         nameList.add("Скрипченко И.И.")
         nameList.add("Антоньев С.Е.")
         nameList.add("Балмаджа А.Г.")
-        val listView = findViewById<ListView>(R.id.listView_2)
+        val listView = findViewById<ListView>(R.id.listViewEmail)
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,nameList)
         listView.adapter = adapter
 
@@ -35,7 +35,7 @@ class ActivityEmail : AppCompatActivity() {
         startActivity(intent)
     }
     fun onClickGoConviviis(view : View){
-        val intent = Intent(this, ActivityConviviis::class.java)
+        val intent = Intent(this, Activity_conviviis2::class.java)
         startActivity(intent)
     }
     fun onClickGoEmail(view : View){

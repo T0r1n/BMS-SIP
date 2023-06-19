@@ -237,7 +237,7 @@
             android:autofillHints=""
             android:ems="10"
             android:inputType="text"
-            android:text="@string/SerchClient"
+            android:hint="@string/SerchClient"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
             app:layout_constraintStart_toEndOf="@+id/imageView"

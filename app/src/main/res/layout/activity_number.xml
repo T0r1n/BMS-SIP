@@ -8,6 +8,66 @@
     android:background="@color/system">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/ButtonLastCall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle"
+            android:contentDescription="@string/ButtonLastCall"
+            android:onClick="onClickGoLastCall"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ButtonNumberCall2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/phone_call"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/ButtonNumberCall2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle"
+            android:contentDescription="@string/ButtonNumberCall"
+            android:onClick="onClickGoNumber"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/number_dialing"
+            app:tint="#159101"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/ButtonBookCall"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle"
+            android:contentDescription="@string/ButtonBookCall"
+            android:onClick="onClickGoBookCall"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintStart_toEndOf="@+id/ButtonNumberCall2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.526"
+            app:srcCompat="@drawable/phonebook" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:background="@color/TopBack"
@@ -87,8 +147,9 @@
             app:layout_constraintLeft_toRightOf="@id/emailBtn"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@android:drawable/stat_sys_phone_call"
-            app:tint="#000000"
-            tools:ignore="ImageContrastCheck" />
+            app:tint="@color/Green"
+            tools:ignore="ImageContrastCheck"
+            />
 
         <ImageButton
             android:id="@+id/emailBtn"
@@ -144,19 +205,18 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="391dp"
+        android:layout_width="match_parent"
         android:layout_height="514dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/btn_8"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -166,11 +226,11 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button5"
+            app:layout_constraintTop_toBottomOf="@+id/btn_5"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/btn_0"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -180,11 +240,11 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button8"
+            app:layout_constraintTop_toBottomOf="@+id/btn_8"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/btn_9"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -193,12 +253,12 @@
             android:textSize="60sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button8"
-            app:layout_constraintTop_toBottomOf="@+id/button6"
+            app:layout_constraintStart_toEndOf="@+id/btn_8"
+            app:layout_constraintTop_toBottomOf="@+id/btn_6"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btn_6"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -207,12 +267,12 @@
             android:textSize="60sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button5"
-            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintStart_toEndOf="@+id/btn_5"
+            app:layout_constraintTop_toBottomOf="@+id/btn_3"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/btn_7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -220,13 +280,13 @@
             android:text="@string/Number7"
             android:textSize="60sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintEnd_toStartOf="@+id/btn_8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/btn_4"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -236,11 +296,11 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/btn_2"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_4"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -248,13 +308,13 @@
             android:text="@string/Number4"
             android:textSize="60sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintEnd_toStartOf="@+id/btn_5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/btn_1"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
@@ -264,12 +324,12 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/btn_2"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
@@ -284,7 +344,7 @@
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
@@ -292,40 +352,26 @@
             android:text="@string/Number1"
             android:textSize="60sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/btn_2"
             app:layout_constraintHorizontal_bias="0.522"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="TextSizeCheck" />
-
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="342dp"
-            android:layout_height="57dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/AddNumber"
-            android:inputType="number"
-            android:textColorHint="#A1887F"
-            app:layout_constraintEnd_toStartOf="@+id/imageView7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="80dp"
             android:layout_height="71dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toEndOf="@+id/button9"
-            app:layout_constraintTop_toBottomOf="@+id/button10"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/callNumber"
+            app:layout_constraintStart_toEndOf="@+id/btn_0"
+            app:layout_constraintTop_toBottomOf="@+id/btn_9"
             app:srcCompat="@android:drawable/sym_action_call"
-            tools:ignore="ImageContrastCheck"
-            android:contentDescription="@string/callNumber" />
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/Delete"
             android:layout_width="47dp"
             android:layout_height="44dp"
             android:layout_marginTop="12dp"
@@ -334,6 +380,38 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_input_delete"
             app:tint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="64dp"
+            android:backgroundTint="@color/Red"
+            android:contentDescription="@string/back"
+            android:onClick="onClickGoCalls"
+            app:layout_constraintEnd_toStartOf="@+id/btn_0"
+            app:layout_constraintTop_toBottomOf="@+id/btn_7"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/editTextNumber"
+            android:layout_width="342dp"
+            android:layout_height="57dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/AddNumber"
+            android:textStyle="bold"
+            android:textColorHint="#A1887F"
+            android:textSize="28sp"
+            android:gravity="fill_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/Delete"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
