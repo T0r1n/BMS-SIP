@@ -135,7 +135,7 @@ class DetailContactFragment : GenericFragment<ContactDetailFragmentBinding>() {
             viewLifecycleOwner
         ) {
             it.consume { messageResourceId ->
-                (activity as MainActivity).showSnackBar(messageResourceId)
+                // (activity as MainActivity).showSnackBar(messageResourceId)
             }
         }
         viewModel.updateNumbersAndAddresses()

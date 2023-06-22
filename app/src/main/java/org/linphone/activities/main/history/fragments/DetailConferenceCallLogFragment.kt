@@ -58,7 +58,7 @@ class DetailConferenceCallLogFragment : GenericFragment<HistoryConfDetailFragmen
             viewLifecycleOwner
         ) {
             it.consume { messageResourceId ->
-                (activity as MainActivity).showSnackBar(messageResourceId)
+                // (activity as MainActivity).showSnackBar(messageResourceId)
             }
         }
     }

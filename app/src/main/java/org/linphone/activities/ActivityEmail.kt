@@ -6,9 +6,8 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.*
+import java.util.*
 import org.linphone.R
-import org.linphone.utils.*
 
 class ActivityEmail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

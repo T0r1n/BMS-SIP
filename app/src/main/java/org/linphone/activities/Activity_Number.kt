@@ -7,9 +7,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.*
+import java.util.*
 import org.linphone.R
-import org.linphone.utils.*
 
 class Activity_Number : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

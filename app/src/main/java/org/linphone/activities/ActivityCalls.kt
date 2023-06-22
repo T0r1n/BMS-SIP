@@ -4,9 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.*
+import java.util.*
 import org.linphone.R
-import org.linphone.utils.*
 
 class ActivityCalls : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
