@@ -278,7 +278,7 @@
 
         <include
             layout="@layout/wait_layout"
-            bind:visibility="@{viewModel.waitForUnregister}"/>
+            bind:visibility="invisible" />
 
     </RelativeLayout>
 

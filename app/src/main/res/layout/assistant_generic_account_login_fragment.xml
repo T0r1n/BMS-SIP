@@ -161,6 +161,11 @@
                         android:textColor="?attr/primaryTextColor"
                         android:text="@string/transport_tls" />
 
+                    <include
+                        layout="@layout/wait_layout"
+                        bind:visibility="@{viewModel.waitForServerAnswer}"
+                        tools:visibility="invisible" />
+
                 </RadioGroup>
 
                 <TextView
@@ -179,10 +184,6 @@
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
-
-        <include
-            layout="@layout/wait_layout"
-            bind:visibility="@{viewModel.waitForServerAnswer}"/>
 
     </RelativeLayout>
 

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <import type="org.linphone.core.TransportType"/>
+        <variable
+            name="viewModel"
+            type="org.linphone.activities.assistant.viewmodels.GenericLoginViewModel" />
+    </data>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +15,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.Activity_Settings_SIP"
     android:background="@color/system">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout12"
@@ -179,6 +189,7 @@
             android:layout_marginTop="20dp"
             android:autofillHints="name"
             android:ems="10"
+            android:text="@={viewModel.username}"
             android:hint="@string/login_edit"
             android:inputType="text"
             android:onClick="onClickGoConviviis"
@@ -195,6 +206,7 @@
             android:layout_marginTop="10dp"
             android:autofillHints="password"
             android:ems="10"
+            android:text="@={viewModel.password}"
             android:hint="@string/password_edit"
             android:inputType="textPassword"
             android:textColorHint="@color/BtbBack"
@@ -204,6 +216,7 @@
             app:layout_constraintTop_toBottomOf="@+id/LoginSIP" />
 
         <Button
+            android:onClick="@{() -> viewModel.createAccountAndAuthInfo()}"
             android:id="@+id/ButtonConnect"
             android:layout_width="150dp"
             android:layout_height="50dp"
@@ -235,6 +248,7 @@
             android:layout_marginTop="10dp"
             android:autofillHints="password"
             android:ems="10"
+            android:text="@={viewModel.domain}"
             android:hint="@string/InputURL"
             android:inputType="textUri"
             android:textColorHint="@color/BtbBack"
@@ -246,3 +260,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
