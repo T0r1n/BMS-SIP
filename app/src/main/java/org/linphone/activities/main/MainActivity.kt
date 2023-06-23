@@ -114,7 +114,7 @@ class MainActivity : GenericActivity(), SnackBarActivity, NavController.OnDestin
         // Must be done before the setContentView
         installSplashScreen()
 
-        binding = DataBindingUtil.setContentView(this, R.layout.main_activity)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.lifecycleOwner = this
 
         sharedViewModel = ViewModelProvider(this)[SharedMainViewModel::class.java]
@@ -169,6 +169,23 @@ class MainActivity : GenericActivity(), SnackBarActivity, NavController.OnDestin
             Log.d("[Main Activity] Found new intent")
             handleIntentParams(intent)
         }
+    }
+
+    fun onClickGoAunth(view: View) {
+        val intent = Intent(this, ActivityAunth::class.java)
+        startActivity(intent)
+    }
+    fun onClickGoCalls(view: View) {
+        val intent = Intent(this, ActivityCalls::class.java)
+        startActivity(intent)
+    }
+    fun onClickGoConviviis(view: View) {
+        val intent = Intent(this, Activity_conviviis2::class.java)
+        startActivity(intent)
+    }
+    fun onClickGoEmail(view: View) {
+        val intent = Intent(this, ActivityEmail::class.java)
+        startActivity(intent)
     }
 
     override fun onResume() {

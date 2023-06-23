@@ -217,6 +217,8 @@
 
         <Button
             android:id="@+id/btn_8"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -231,6 +233,8 @@
 
         <Button
             android:id="@+id/btn_0"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -245,6 +249,8 @@
 
         <Button
             android:id="@+id/btn_9"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -259,6 +265,8 @@
 
         <Button
             android:id="@+id/btn_6"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -273,6 +281,8 @@
 
         <Button
             android:id="@+id/btn_7"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -287,6 +297,8 @@
 
         <Button
             android:id="@+id/btn_5"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -301,6 +313,8 @@
 
         <Button
             android:id="@+id/btn_4"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="5dp"
@@ -315,6 +329,8 @@
 
         <Button
             android:id="@+id/btn_3"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
@@ -330,6 +346,8 @@
 
         <Button
             android:id="@+id/btn_2"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
@@ -345,6 +363,8 @@
 
         <Button
             android:id="@+id/btn_1"
+            android:background="@drawable/shape_circle"
+            android:textColor="#FFFFFF"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="80dp"
@@ -403,11 +423,12 @@
             android:ems="10"
             android:focusable="false"
             android:focusableInTouchMode="false"
-            android:hint="@string/AddNumber"
-            android:textStyle="bold"
-            android:textColorHint="#A1887F"
-            android:textSize="28sp"
             android:gravity="fill_vertical"
+            android:hint="@string/AddNumber"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/Delete"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
