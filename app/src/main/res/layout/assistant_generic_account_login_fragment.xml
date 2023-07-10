@@ -48,12 +48,12 @@
                 <TextView
                     style="@style/standard_small_text_font"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="9dp"
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:paddingTop="20dp"
                     android:text="@string/assistant_login_desc"
-                    tools:visibility="gone" />
+                    tools:visibility="invisible" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -107,28 +107,27 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/assistant_display_name_optional">
+                    android:hint="@string/assistant_display_name_optional"
+                    tools:visibility="visible" >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="57dp"
                         android:background="@color/transparent_color"
                         android:imeOptions="actionDone"
                         android:inputType="textPersonName"
                         android:singleLine="true"
                         android:text="@={viewModel.displayName}"
-                        android:visibility="gone"
-                        tools:visibility="gone" />
+                        tools:visibility="visible" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
                     android:padding="10dp"
-                    tools:visibility="gone">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <TextView
                         style="@style/assistant_input_field_header_font"
@@ -148,29 +147,29 @@
                         android:text="@string/transport_udp"
                         android:textColor="?attr/primaryTextColor" />
 
-                    <include
-                        layout="@layout/wait_layout"
-                        bind:visibility="@{viewModel.waitForServerAnswer}"
-                        tools:visibility="invisible" />
-
                 </RadioGroup>
 
                 <TextView
+                    android:onClick="@{() -> viewModel.createAccountAndAuthInfo()}"
+                    android:enabled="@{viewModel.loginEnabled, default=false}"
+                    android:text="@string/assistant_login"
+                    android:background="@drawable/assistant_button"
+                    android:textColor="@drawable/assistant_button_text_color"
                     style="@style/button_font"
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:background="@drawable/assistant_button"
-                    android:enabled="@{viewModel.loginEnabled, default=false}"
-                    android:onClick="@{() -> viewModel.createAccountAndAuthInfo()}"
-                    android:padding="10dp"
-                    android:text="@string/assistant_login"
-                    android:textColor="@drawable/assistant_button_text_color" />
+                    android:padding="10dp"/>
 
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
+
+        <include
+            layout="@layout/wait_layout"
+            bind:visibility="@{viewModel.waitForServerAnswer}"
+            tools:visibility="gone" />
 
     </RelativeLayout>
 

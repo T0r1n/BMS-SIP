@@ -23,7 +23,6 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import java.util.*
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.core.*
 import org.linphone.core.tools.Log
@@ -127,7 +126,7 @@ class GenericLoginViewModel(private val accountCreator: AccountCreator) : ViewMo
         accountCreator.password = password.value
         accountCreator.domain = domain.value
         accountCreator.displayName = displayName.value
-        accountCreator.transport = TransportType.Udp
+        accountCreator.transport = transport.value
 
         val account = accountCreator.createAccountInCore()
         accountToCheck = account
@@ -141,10 +140,6 @@ class GenericLoginViewModel(private val accountCreator: AccountCreator) : ViewMo
         }
 
         Log.i("[Assistant] [Generic Login] Account created")
-
-//        val builder = AlertDialog.Builder(this)
-//        builder.setTitle("Заголовок окна")
-//        builder.setMessage("Текст сообщения")
     }
 
     private fun isLoginButtonEnabled(): Boolean {
